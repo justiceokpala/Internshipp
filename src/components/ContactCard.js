@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import UserProfile from "./userProfile";
+import UserProfile from "./UserProfile";
 
 function ContactCard() {
   const [contacts, setContacts] = useState("");
@@ -9,9 +9,9 @@ function ContactCard() {
       .then((response) => response.json())
       .then((data) => {
         setContacts(data);
-        //console.log(data);
       });
   }, []);
+
   return (
     <>
       {/* check if contacts exist */}
