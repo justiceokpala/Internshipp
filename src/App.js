@@ -1,11 +1,18 @@
-import ContactCard from './components/ContactCard'
-
+import React from "react";
+import ContactCard from "./components/ContactCard";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <ContactCard />
-    </div>
+    <>
+      <Router>
+        {/* <ContactCard /> */}
+        <Switch>
+          <Route exact path="/" component={ContactCard} />
+          <Route path='/order-summary'/>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

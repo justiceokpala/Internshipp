@@ -1,4 +1,5 @@
 import React from "react";
+import UserAvatar from "../asset/images/avatar.png";
 
 const UserProfile = ({ contact }) => {
   console.log(contact);
@@ -10,6 +11,7 @@ const UserProfile = ({ contact }) => {
     <>
       <div className="contact-card">
         <div className="user-details">
+          <img src={UserAvatar} alt="..." width="100px" />
           <p>Name: {name}</p>
           <p>Address: {address}</p>
           <p>Phone: {phone}</p>

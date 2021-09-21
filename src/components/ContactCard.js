@@ -13,14 +13,14 @@ function ContactCard() {
   }, []);
 
   return (
-    <>
+    <div>
       {/* check if contacts exist */}
       {contacts !== "" ? (
         <UserProfile contact={contacts} />
       ) : (
         <p>No User Found</p>
       )}
-    </>
+    </div>
   );
 }
 

@@ -1,8 +1,7 @@
 import React from "react";
-import ContactCard from "./components/ContactCard";
 
-const App = () => {
-  return <ContactCard />;
+const OrderSummary = () => {
+  return <></>;
 };
 
-export default App;
+export default OrderSummary;
