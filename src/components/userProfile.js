@@ -9,16 +9,26 @@ const UserProfile = ({ contact }) => {
 
   return (
     <>
-      <div className="contact-card">
+      <div className="contact-card container-fluid">
         <div className="user-details">
           <img src={UserAvatar} alt="..." width="100px" />
-          <p>Name: {name}</p>
-          <p>Address: {address}</p>
-          <p>Phone: {phone}</p>
-          <p>About: {about}</p>
+          <p>
+            <b className="red">Name</b>: {name}
+          </p>
+          <p>
+            <b className="red">Address</b>: {address}
+          </p>
+          <p>
+            <b className="red">Phone </b>: {phone}
+          </p>
+          <p>
+            <b className="red">About </b>: {about}
+          </p>
           {likes.length > 0 && (
             <>
-              <p>Likes</p>
+              <p>
+                <b className="red">Likes</b>
+              </p>
               <ul>
                 {likes.map((like, index) => (
                   <li key={index}>{like}</li>
@@ -26,7 +36,9 @@ const UserProfile = ({ contact }) => {
               </ul>
             </>
           )}
-          <p>Dislikes</p>
+          <p>
+            <b className="red">Dislikes</b>
+          </p>
           <ul>
             {dislikes.map((dislike, index) => (
               <li key={index}>{dislike}</li>

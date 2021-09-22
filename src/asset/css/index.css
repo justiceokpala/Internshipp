@@ -22,4 +22,13 @@ code {
   width: 400px;
   padding: 20px;
   margin: 20px auto;
+  background-color: rgb(104, 104, 190);
+  color: rgb(207, 193, 193);
+  font-family: monospace;
+  font-size: large;
+  font-weight: inherit;
+}
+
+.red {
+  color: rgb(185, 34, 65);
 }

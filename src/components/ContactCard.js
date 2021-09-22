@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import UserProfile from "./UserProfile";
+import UserProfile from "./userProfile";
 
 function ContactCard() {
   const [contacts, setContacts] = useState("");
