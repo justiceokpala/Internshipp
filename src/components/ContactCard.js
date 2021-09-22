@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Restaurant from "./Restaurant";
 import UserProfile from "./userProfile";
 
 function ContactCard() {
@@ -19,6 +20,11 @@ function ContactCard() {
         <UserProfile contact={contacts} />
       ) : (
         <p>No User Found</p>
+      )}
+      {contacts !== "" ? (
+        <Restaurant contact={contacts} />
+      ) : (
+        <p>No Restaurant Found</p>
       )}
     </div>
   );

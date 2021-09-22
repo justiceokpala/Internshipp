@@ -1,15 +1,15 @@
 import React from "react";
 import ContactCard from "./components/ContactCard";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import OrderSummary from "./components/orderSummary";
 
 function App() {
   return (
     <>
       <Router>
-        {/* <ContactCard /> */}
         <Switch>
-          <Route exact path="/" component={ContactCard} />
-          <Route path='/order-summary'/>
+          <Route exact path="/" component={OrderSummary} />
+          <Route path="/contact-card" component={ContactCard} />
         </Switch>
       </Router>
     </>
